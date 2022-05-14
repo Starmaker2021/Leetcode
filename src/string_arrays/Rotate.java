@@ -30,10 +30,10 @@ public class Rotate {
         }
         //接着进行轴对称
         for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len/2; j++) {
+            for (int j = 0; j < len / 2; j++) {
                 int temp = array[i][j];
-                array[i][j] = array[i][len-1-j];
-                array[i][len-1-j] = temp;
+                array[i][j] = array[i][len - 1 - j];
+                array[i][len - 1 - j] = temp;
             }
         }
         return array;
@@ -43,7 +43,7 @@ public class Rotate {
     public static void printArray(int[][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j]+" ");
+                System.out.print(array[i][j] + " ");
             }
             System.out.println();
         }
